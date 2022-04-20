@@ -2,17 +2,24 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+	height: 100vh;
+}
+
+.nav-bar, .footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: center;
+  width: 100vw;
 }
 
 nav {
-  background-color: #2d2d2d;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   width: 90vw;
-  padding: 0 5vw;
+	max-width: 1200px;
+	margin: auto;
 }
 
 nav .logo {
@@ -31,27 +38,27 @@ nav div a {
   padding: 0 0 0 20px;
 }
 
-.footer {
-  background-color: #2d2d2d;
-  color: #fff;
-  text-align: center;
-  width: 80vw;
-  padding: 5px 10vw;
-}
-
 h1 {
   font-size: 3.5em;
   font-weight: 300;
   margin: 25px 0;
   text-align: center;
 }
+
+.search-bar {
+	background-color: #f5f5f5;
+  border-radius: 15px;
+	margin: 10px 0;
+}
+
 .search-bar input {
   border: solid 2px #ababab;
   border-radius: 12px;
   width: 220px;
   padding: 14px 12px;
-  margin: 25px 0;
+  margin: 20px;
 }
+
 button {
   font-size: 1.1em;
   cursor: pointer;
@@ -66,50 +73,66 @@ button:hover {
   color: #fff;
 }
 
-.home-body {
+.home-body, .about-body {
   display: flex;
   flex-direction: column;
   Align-items: center;
   justify-content: space-between;
   width: 90vw;
-  padding: 0 5vw;
+	max-width: 1200px;
+  margin: auto;
 }
 
 .videos-body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 90vw;
-  padding: 0 5vw;
-  margin-bottom: 50px;
+	max-width: 1200px;
+	margin: 0 auto 50px;
 }
 
 .video-player-and-list {
   display: flex;
+	flex-wrap: wrap;
   justify-content: space-between;
 }
 
 #video-player {
-  flex: 1 1 auto;
-/*   display: flex;
-  flex-direction: column;
-  width: 70%; */
+	width: 60%;
+	background-color: #f5f5f5;
+  border-radius: 15px;
+	padding: 0 20px;
+	margin: 10px 0;
 }
 
-/* #video-player iframe {
-  width: 70vw;
+#video-player iframe {
+  width: 100%;
   min-width: 600px;
   aspect-ratio: 16/9;
-} */
+	margin: 10px 0;
+}
+
+.details {
+	font-weight: 400;
+	line-height: 1.5;
+}
+.details div:first-child {
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.5;
+}
 
 .video-list {
-  width: 300px;
+	flex: 1;
+	display: flex:
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .list-item {
   display: flex;
-  padding: 10px;
-  margin: 0 20px 10px;
+  padding: 10px 0 10px 15px;
+  margin: 10px 0 10px 10px;
   background-color: #ededed;
   border-radius: 15px;
 }
